@@ -1,0 +1,149 @@
+/* Ajustando a logo para ficar bem posicionada à esquerda */
+.logo-nav {
+    height: 60px; /* Ajuste a altura da logo conforme necessário */
+    margin-left: -100px; /* Move o logo ainda mais para a esquerda */
+}
+
+
+/* Navbar */
+.navbar-brand {
+    margin-left: 0; /* Garante que fique na borda esquerda */
+}
+
+/* Estilizando o carrossel */
+/* Faz o carrossel ocupar toda a largura */
+#carouselExample {
+    width: 100vw; /* Ocupa 100% da largura da tela */
+    max-width: 100%;
+}
+
+/* Ajusta as imagens para evitar cortes */
+.carousel-inner img {
+    width: 100vw; /* Mantém a largura total */
+    height: 500px; /* Altura fixa para evitar cortes */
+    object-fit: cover; /* Ajusta sem distorção */
+    object-position: center; /* Centraliza a imagem */
+}
+
+/* Ajuste nos botões do carrossel para melhor visibilidade */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Deixa os ícones mais visíveis */
+}
+
+/* Define uma cor de fundo ocupando toda a página */
+.background-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% da largura da tela */
+    height: 100vh; /* 100% da altura da tela */
+    background-color: #0099FF; /* Escolha a cor que preferir */
+    z-index: -1; /* Mantém o fundo atrás dos elementos */
+}
+
+/* Ajuste no `body` para garantir que ocupe a página inteira */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navbar {
+    position: relative; /* Garante que o menu fique acima do fundo */
+    z-index: 10; /* Eleva o menu para que o logo apareça */
+}
+
+.logo-nav {
+    height: 50px; /* Ajuste conforme necessário */
+    position: relative; /* Evita ser afetado pelo background */
+    z-index: 15; /* Certifica que o logo fica visível */
+}
+
+/* Centralizando os itens do menu */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens no menu */
+    gap: 50px; /* Define um espaçamento maior entre os itens */
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+/* Ajustando as imagens para ficarem bem distribuídas */
+/* Ajustando as imagens para ficarem lado a lado */
+.container .row {
+    display: flex;
+    justify-content: flex-start; /* Centraliza as imagens na linha */
+   
+    gap: 300px; /* Espaçamento entre as imagens */
+}
+
+.container .row img {
+    max-height: 400px; /* Mantém proporção e evita imagens muito grandes */
+    object-fit: cover; /* Ajusta sem distorcer */
+}
+
+.tempo{
+    margin-left: 8%;
+    width: 84%;
+}
+
+/* 🌊 Ajuste na seção de apresentação */
+.container h2 {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* 🖼️ Ajustes para o grid de imagens */
+.container .row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .row img {
+    width: 100%; /* Mantém a largura ajustada */
+    max-height: 250px; /* Define um limite de altura */
+    object-fit: contain; /* Ajusta sem distorcer */
+    border-radius: 8px; /* Arredonda os cantos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+}
+
+/* 🏄 Ajuste no tamanho das imagens das pranchas individuais */
+.prancha-img {
+    width:25%; /* Define uma largura menor */
+    max-width: 500px; /* Limite máximo para não ficar muito grande */
+    height: auto; /* Mantém a proporção correta */
+    display: block; /* Centraliza a imagem */
+    margin: 20px auto; /* Espaçamento uniforme */
+    border-radius: 8px; /* Deixa as bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra para destaque */
+}
+
+.cart-sidebar {
+    position: sticky;
+    top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}

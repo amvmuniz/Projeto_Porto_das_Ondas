@@ -1,6 +1,6 @@
 /* Ajustando a logo para ficar bem posicionada à esquerda */
 .logo-nav {
-    height: 60px; /* Ajuste a altura da logo conforme necessário */
+    height: 160px; /* Ajuste a altura da logo conforme necessário */
     margin-left: -100px; /* Move o logo ainda mais para a esquerda */
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .logo-nav {
-    height: 50px; /* Ajuste conforme necessário */
+    height: 60px; /* Ajuste conforme necessário */
     position: relative; /* Evita ser afetado pelo background */
     z-index: 15; /* Certifica que o logo fica visível */
 }
@@ -146,4 +146,71 @@ body {
     padding: 8px;
     margin: 5px 0;
     border-radius: 5px;
+}
+
+/* 🏠 Estilizando os menus com animação */
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 🔹 Efeito de mudança de cor ao passar o cursor */
+.navbar-nav .nav-link:hover {
+    color: #ff9800; /* Altera a cor */
+}
+
+/* 🔹 Efeito de sublinhado animado */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #ff9800;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* 🔻 Estilizando o rodapé */
+.footer {
+    background-color: #222;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff; /* Garante que todo o texto fique branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 💡 Mantendo seu nome destacado */
+.footer strong {
+    color: #ff9800; /* Seu nome em cor vibrante */
+}
+
+/* 🔹 Link da Política de Privacidade */
+.footer a {
+    text-decoration: none;
+    color: #ff9800;
+    font-weight: bold;
+    margin-left: 10px; /* Espaçamento entre os itens */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 📩 Ajuste na caixa de mensagem */
+#mensagem {
+    resize: none; /* Impede que o usuário ajuste manualmente */
+    height: 150px; /* Define um tamanho fixo */
+    max-height: 150px; /* Mantém um limite máximo */
+    overflow-y: auto; /* Adiciona barra de rolagem caso o conteúdo seja longo */
 }

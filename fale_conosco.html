@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto das Ondas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        
+    <!-- 🏠 Menu de navegação -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+        <a class="navbar-brand ms-0" href="index.html">
+            <img src="img/logo.jpg" alt="Logo" class="logo-nav">            
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="localizacao.html">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fale_conosco.html">Fale Conosco</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <div class="content">
+            <!-- 📩 Seção de Fale Conosco -->
+<div class="contact-form container mt-5">
+    <h2 class="text-center">Fale Conosco</h2>
+    <form action="enviar_formulario.php" method="POST">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" maxlength="200" placeholder="Digite sua mensagem (máx. 200 caracteres)" required></textarea>
+            <small id="contador" class="text-muted">200 caracteres restantes</small>
+        </div>
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary w-48">Enviar</button>
+            <button type="reset" class="btn btn-secondary w-48">Cancelar</button>
+        </div>
+    </form>
+</div>
+            
+            </br>
+            <div class="tempo">
+                <div id="ww_2b4613aa65187" v='1.3' loc='id' a='{"t":"responsive","lang":"pt","sl_lpl":1,"ids":["wl4478"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Fonte de dados meteorológicos: <a href="https://wetterlang.de" id="ww_2b4613aa65187_u" target="_blank">Wettervorschau 30 tage</a></div><script async src="https://app3.weatherwidget.org/js/?id=ww_2b4613aa65187"></script>
+            </div>
+        </br>
+        </div>      
+       
+    </div>
+    <br>
+<!-- 🔻 Rodapé -->
+<footer class="footer mt-5 bg-dark text-white text-center py-3">
+    <div class="container">
+        <p><strong>Construído por Anderson Muniz_JUN/2025 - Todos os direitos reservados © 2025</strong></p>
+        <a href="politica.html" class="text-white">Política de Privacidade</a>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

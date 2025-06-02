@@ -236,3 +236,9 @@ form.d-flex button:hover {
     background-color: #ff9800;
     border-color: #ff9800;
 }
+
+body {
+    background: url('img/fundo-de-cores-vibrantes-em-azul-e-bege.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.9; /* Reduz a opacidade para ficar mais sutil */
+}

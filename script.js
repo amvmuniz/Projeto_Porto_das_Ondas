@@ -46,3 +46,15 @@ document.getElementById("mensagem").addEventListener("input", function() {
     let restante = maxCaracteres - this.value.length;
     document.getElementById("contador").textContent = restante + " caracteres restantes";
 });
+
+function searchSite(event) {
+    event.preventDefault(); // Impede recarregamento da página
+
+    let query = document.getElementById("searchInput").value.toLowerCase();
+    let items = document.querySelectorAll(".container .row .col-md-4"); // Seleciona os produtos
+    
+    items.forEach(item => {
+        let text = item.innerText.toLowerCase();
+        item.style.display = text.includes(query) ? "block" : "none"; // Mostra ou oculta os itens
+    });
+}

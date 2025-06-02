@@ -214,3 +214,25 @@ body {
     max-height: 150px; /* Mantém um limite máximo */
     overflow-y: auto; /* Adiciona barra de rolagem caso o conteúdo seja longo */
 }
+
+/* 🖼️ Efeito 3D com borda azul */
+.container .row img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* 🔹 Quando o cursor estiver sobre a imagem */
+.container .row img:hover {
+    transform: translateY(-10px) scale(1.05); /* Move a imagem para cima e aumenta levemente */
+    box-shadow: 0px 10px 20px rgba(0, 0, 255, 0.5); /* Sombra azul ao redor */
+    border: 3px solid #007BFF; /* Adiciona uma borda azul vibrante */
+}
+
+/* 🔍 Estilizando o campo de pesquisa */
+form.d-flex input {
+    max-width: 250px;
+}
+
+form.d-flex button:hover {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}

@@ -58,3 +58,10 @@ function searchSite(event) {
         item.style.display = text.includes(query) ? "block" : "none"; // Mostra ou oculta os itens
     });
 }
+
+function cancelarCadastro() {
+    if (confirm("Tem certeza que deseja cancelar o cadastro?")) {
+        document.getElementById("cadastroForm").reset(); // Limpa os campos do formulário
+        window.location.href = "index.html"; // Redireciona para a página inicial (ou outra página desejada)
+    }
+}
